@@ -1,2 +1,3 @@
 # dynamic-ip-notifier
-## hi
+## Info
+## Installation Guide
