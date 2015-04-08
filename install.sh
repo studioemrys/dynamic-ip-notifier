@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/sh
 
 # dynamic-ip-notifier repository installation
 
@@ -24,7 +24,7 @@ while true; do
 	echo "Installing dynamic-ip-notifier..."; 
 	echo ;		
 	echo "Unpacking packages...";	
-	tar xvfz dynamic-ip-notifier.tar.gz -C $HOME
+	tar xvfz ip-notifier.tar.gz -C $HOME
 	echo "Installing packages...";		
 	sudo chmod +x $HOME/ip-notifier/ip-notifier.sh
 	echo "Installing postfix...";
