@@ -4,3 +4,5 @@ checks a computer external IP adress. If the adress has changed than an email wi
 
 This script can be useful for linux computers behind dynamic IP adresses that need to be visited once in a while. For
 example a ubuntu server or a linux mint computer with a shared desktop could make good use of this script.
+
+#Installation guide
