@@ -13,16 +13,16 @@ Open the linux terminal with the key combination:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTROL - ALT - T
 
 This will popup a kind of DOS like screen. To make sure you are in the home folder, go to it by typing:
-<b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd $HOME
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd $HOME
 
 Now install a programme called 'git' on your system:
-<b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo apt-get install git
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo apt-get install git
 
 With 'git' you can download the dynamic-ip-notifier installation software to your home folder:
-<b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone http://github.com/studioemrys/dynamic-ip-notifier
+<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone http://github.com/studioemrys/dynamic-ip-notifier
 
 This will install the dynamic-ip-notifier in a folder called dynamic-ip-notifier. Go inside that folder by:
 <b>
