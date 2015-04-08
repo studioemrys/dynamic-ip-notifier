@@ -8,14 +8,14 @@ example a ubuntu server or a linux mint computer with a shared desktop could mak
 #Installation guide
 Install git from your package manager:
   
-<b>&nbsp;$ sudo apt-get install git
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ sudo apt-get install git
   
 Go to your home folder to download the installation software:
 
-<b>&nbsp;$ cd $HOME
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ cd $HOME
   
 Download the installation software from git:
 
-<b>&nbsp;$ git clone http://github.com/studioemrys/dynamic-ip-notifier
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ git clone http://github.com/studioemrys/dynamic-ip-notifier
   
 Go to 
