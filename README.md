@@ -8,7 +8,7 @@ example a ubuntu server or a linux mint computer with a shared desktop could mak
 #Installation guide
 Install git from your package manager:
   
-<tb><b>$ sudo apt-get install git
+&nbsp<b>$ sudo apt-get install git
   
 Go to your home folder to download the installation software:
 
