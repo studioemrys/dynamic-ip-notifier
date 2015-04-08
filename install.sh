@@ -26,7 +26,7 @@ while true; do
 	echo "Unpacking packages...";	
 	tar xvfz ip-notifier.tar.gz -C $HOME
 	echo "Installing packages...";		
-	sudo chmod +x $HOME/ip-notifier/ip-notifier.sh
+	sudo chmod +x $HOME/ip-notifier/dynamic-ip-notifier.sh
 	echo "Installing postfix...";
 	echo "Postfix will be installed on your system. During installation a configuration menu will popup. At the first screen hit 'OK'. At the second screen hit 'internetsite'. At the third screen do not alter anything and hit 'OK'."	
 	echo ;		
