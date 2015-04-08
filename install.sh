@@ -50,7 +50,7 @@ while true; do
 	echo "dynamic-ip-notifier succesfully installed in $HOME/ip-notifier. To manually change the recipient email, change the email adress saved in $HOME/ip-notifier/config/config.ini" ;
 	echo ;
 	echo "remove installation directory..." ;
-	rm -R $HOME/dynamic-ip-notifier ;
+	sudo rm -R $HOME/dynamic-ip-notifier ;
 	echo ;	
 	break;;
         [Nn]* ) 
