@@ -6,13 +6,14 @@
 echo
 echo 
 echo "dynamic-ip-notifier repository being read...done"
-echo "dynamic-ip-notifier repository dependencies being read...done"
+echo
+echo "dynamic-ip-notifier dependencies being read...done"
 echo
 echo "during installation your system will probably request for sudo password"
 echo
 echo "Security vulnerabillities being read...done"
 echo
-echo "dynamic-ip-notifier will send your external ip adress to a chosen server adress. This will make your system more vulnerable to security enforcements. As long as the email adress belongs to a reliable recipient, we consider using dynamic-ip-notifier as a safe procedure"
+echo "dynamic-ip-notifier will send your external ip adress to a chosen ssh server. This will make your system more vulnerable to security enforcements. As long as the server adress belongs to a reliable recipient, we consider using dynamic-ip-notifier as a safe procedure"
 echo
 while true; do
     read -p "Would you like to install dynamic-ip-notifier?" answer
@@ -26,6 +27,8 @@ while true; do
 	echo "Installing packages...";		
 	sudo chmod +x $HOME/ip-notifier/dynamic-ip-notifier.sh
 	echo ;
+	echo "Install sshpass..."
+	sudo apt-get install sshpass	
 	echo ; 
 	echo "Adding cronjobs..."
 	echo ;		
@@ -38,8 +41,13 @@ while true; do
 	rm temp
 	echo ;
 	echo "Configuring dynamic-ip-notifier";	
-	read -p "To which server adress would you like to send a notification file when the external IP adress changes?" clientServerAdress
-	echo $clientServerAdress > $HOME/ip-notifier/config/config.ini	
+	echo ;
+	read -p "What is the ssh server url or ip adress? (eg server.mydomain.com or 90.91.92.93)" serverAdress	
+	read -p "What is the ssh server username?" serverUsername
+	read -p "What is the ssh server password?" serverPassword
+	echo "serverAdress="$serverAdress >> $HOME/ip-notifier/config/config.ini
+	echo "serverUsername="$serverUsername >> $HOME/ip-notifier/config/config.ini	
+	echo "serverPassword="$serverPassword >> $HOME/ip-notifier/config/config.ini
 	echo ;
 	echo "dynamic-ip-notifier succesfully installed in $HOME/ip-notifier. To manually change the recipient email, change the email adress saved in $HOME/ip-notifier/config/config.ini" ;
 	echo ;
