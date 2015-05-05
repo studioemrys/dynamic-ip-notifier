@@ -42,10 +42,13 @@ while true; do
 	echo ;
 	echo "Configuring dynamic-ip-notifier";	
 	echo ;
-	read -p "What is the ssh server url or ip adress? (eg server.mydomain.com or 90.91.92.93)" serverAdress	
+	echo "dynamic-ip-notifier will send a notification to a ssh server."	
+	read -p "What is the ssh server url or ip adress? (eg server.mydomain.com or 90.91.92.93)" serverAdress
+	read -p "To which directory on your SSH server do you want to store the ip adress notification? Make sure you have access and rights for this directory" serverDirectory 	
 	read -p "What is the ssh server username?" serverUsername
 	read -p "What is the ssh server password?" serverPassword
 	echo "serverAdress="$serverAdress >> $HOME/ip-notifier/config/config.ini
+	echo "serverDirectory="$serverDirectory >> $HOME/ip-notifier/config/config.ini
 	echo "serverUsername="$serverUsername >> $HOME/ip-notifier/config/config.ini	
 	echo "serverPassword="$serverPassword >> $HOME/ip-notifier/config/config.ini
 	echo ;
